@@ -3,16 +3,23 @@ ruby '2.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
+gem 'pg'
 
 # :development and :test groups added per Ruby on Rails tutorial
-group :development do
+group :development, :test do
   gem 'rspec-rails'
-  gem 'sqlite3'
+  gem 'guard-rspec'
+  gem 'spork-rails', github: 'sporkrb/spork-rails' # rubygems version not rails 4 compatible
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
+  
+  # added with guard-rspec for use on Linux
+  gem 'libnotify'
 end
 
 # Use SCSS for stylesheets
@@ -51,6 +58,5 @@ gem 'spring',        group: :development
 
 # added per RoR tutorial
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
