@@ -4,6 +4,8 @@ ruby '2.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 gem 'pg'
+gem 'bootstrap-sass'
+gem 'sprockets'
 
 # :development and :test groups added per Ruby on Rails tutorial
 group :development, :test do
