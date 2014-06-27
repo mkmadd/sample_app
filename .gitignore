@@ -18,4 +18,4 @@
 # Ignoring per RoR tutorial
 database.yml
 doc/
-secrets.yml
+#secrets.yml  # messing with deployment on heroku
