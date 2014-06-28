@@ -6,6 +6,7 @@ gem 'rails', '4.1.1'
 gem 'pg'
 gem 'bootstrap-sass'
 gem 'sprockets'
+gem 'bcrypt'    # to hash passwords
 
 # :development and :test groups added per Ruby on Rails tutorial
 group :development, :test do
