@@ -23,6 +23,7 @@ group :test do
   
   # added with guard-rspec for use on Linux
   gem 'libnotify'
+  gem 'factory_girl_rails'
 end
 
 # Use SCSS for stylesheets
