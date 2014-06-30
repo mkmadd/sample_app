@@ -24,6 +24,8 @@ group :test do
   # added with guard-rspec for use on Linux
   gem 'libnotify'
   gem 'factory_girl_rails'
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 # Use SCSS for stylesheets
