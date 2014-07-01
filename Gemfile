@@ -7,6 +7,9 @@ gem 'pg'
 gem 'bootstrap-sass'
 gem 'sprockets'
 gem 'bcrypt'    # to hash passwords
+gem 'faker'    # to create fake users
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 # :development and :test groups added per Ruby on Rails tutorial
 group :development, :test do
